@@ -1,0 +1,120 @@
+/* Importando uma fonte mais moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-green: #198754;
+    --dark-green: #0d5132;
+    --light-bg: #f0f2f5;
+    --sidebar-width: 260px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: #334155;
+}
+
+/* Sidebar Estilizada */
+.sidebar {
+    background: linear-gradient(180deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    min-height: 100vh;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link {
+    color: rgba(255,255,255,0.7);
+    padding: 12px 20px;
+    margin: 4px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.sidebar .nav-link:hover {
+    color: white;
+    background: rgba(255,255,255,0.15);
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link.active {
+    background: white;
+    color: var(--primary-green);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Cards de Estatísticas (Novos) */
+.stat-card {
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+    transition: transform 0.3s;
+    background: white;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Customização da Tabela */
+.card-table {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody tr {
+    transition: background 0.2s;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Badge de Perfil */
+.badge-perfil {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.bg-adm { background: #dcfce7; color: #e8f1ec; }
+.bg-chefe { background: #dbeafe; color: #dae0f1; }
+.bg-func { background: #f1f5f9; color: #475569; }
+
+/* Botões Customizados */
+.btn-success {
+    background-color: var(--primary-green);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(25, 135, 84, 0.2);
+}
+
+.btn-success:hover {
+    background-color: var(--dark-green);
+    box-shadow: 0 6px 12px rgba(25, 135, 84, 0.3);
+}
